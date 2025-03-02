@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="login.css">
+    <title>Login - Movie Ticket Booking</title>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-    <div id="form_container">
-        <form id="login_form">
-            <h3>Login here</h3>
-            <br>
-            <div id="name">
-                <p id="errname"></p>
-                <label>Name</label>
-                <div id="iname">
-                    <input type="text" id="nameinp" placeholder="Enter your name" required  >
-                <i class="fa-solid fa-user"></i>
-                </div>
-            </div>
-            <br>
-            <div id="pass">
-                <p id="errpass"></p>
-                <label>Password</label>
-                <input type="text" id="passinp" placeholder="Enter password" required >
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <br>
-            <button id="loginbtn"><a href="home.html">Login</a></button>
+
+    <!-- Background Animation -->
+    <div id="bg-animation"></div>
+
+    <!-- Login Container -->
+    <div class="login-container" data-aos="fade-up">
+        <h2>Login to <span id="typed-text"></span></h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email Address" required />
+            <input type="password" id="password" placeholder="Password" required />
+            <button type="submit">Login</button>
         </form>
-        <br>
-        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </div>
+
+    <!-- Movie Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="movie1.jpg" alt="Movie 1"></div>
+            <div class="swiper-slide"><img src="movie2.jpg" alt="Movie 2"></div>
+            <div class="swiper-slide"><img src="movie3.jpg" alt="Movie 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="login.js"></script>
+
 </body>
 </html>

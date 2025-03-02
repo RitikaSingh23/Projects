@@ -1,35 +1,42 @@
-const arrows = document.querySelectorAll(".arrow");
-const movieLists = document.querySelectorAll(".movie-list");
-
-arrows.forEach((arrow, i) => {
-  const itemNumber = movieLists[i].querySelectorAll("img").length;
-  let clickCounter = 0;
-  arrow.addEventListener("click", () => {
-    const ratio = Math.floor(window.innerWidth / 270);
-    clickCounter++;
-    if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
-      movieLists[i].style.transform = `translateX(${
-        movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
-      }px)`;
-    } else {
-      movieLists[i].style.transform = "translateX(0)";
-      clickCounter = 0;
-    }
-  });
-
-  console.log(Math.floor(window.innerWidth / 270));
+// Vanta.js Background Animation
+VANTA.WAVES({
+  el: "#bg-animation",
+  color: 0xff5a00,
+  shininess: 50,
+  waveHeight: 20,
+  waveSpeed: 0.5,
 });
 
-//TOGGLE
+// Initialize AOS (Animations)
+AOS.init();
 
-const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(
-  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle"
-);
+// Initialize Swiper.js
+var swiper = new Swiper(".swiper-container", {
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+});
 
-ball.addEventListener("click", () => {
-  items.forEach((item) => {
-    item.classList.toggle("active");
-  });
-  ball.classList.toggle("active");
+// Typed.js for Animated Text
+var typed = new Typed("#typed-text", {
+  strings: ["Tickets", "Seats", "Popcorn", "Movies!"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+});
+
+// Booking Form Validation
+document.getElementById("bookingForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var movie = document.getElementById("movieSelect").value;
+  var date = document.getElementById("dateSelect").value;
+
+  if (movie === "Select a Movie" || !date) {
+      alert("Please select a movie and date!");
+  } else {
+      alert("Your tickets for " + movie + " on " + date + " are booked!");
+  }
 });

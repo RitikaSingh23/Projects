@@ -27,18 +27,20 @@ var typed = new Typed("#typed-text", {
     loop: true,
 });
 
-// Login Form Validation
-document.getElementById("loginForm").addEventListener("submit", function (event) {
+// Sign-Up Form Validation
+document.getElementById("signupForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
+    var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (!email.includes("@") || password.length < 6) {
-        alert("Invalid email or password must be at least 6 characters!");
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
         return;
     }
 
-    alert("Login successful! Redirecting to home...");
-    window.location.href = "home.html";
+    alert("Sign-up successful! Redirecting to login...");
+    window.location.href = "index.html";
 });
