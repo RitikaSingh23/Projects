@@ -21,7 +21,7 @@ var swiper = new Swiper(".swiper-container", {
 
 // Typed.js for Animated Text
 var typed = new Typed("#typed-text", {
-    strings: ["Movies", "Tickets", "Fun!"],
+    strings: ["Movies🎬", "Tickets🎞", "Fun😃", "Popcorn🍿!"],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true,
