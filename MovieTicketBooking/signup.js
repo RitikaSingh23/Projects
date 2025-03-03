@@ -28,12 +28,12 @@ var typed = new Typed("#typed-text", {
 });
 
 // Sign-Up Form Validation
-let submit=()=>{
+let sub=()=>{
     let inpname=document.querySelector("#name").value;
     let inpnum=document.querySelector("#number").value;
     let inpemail=document.querySelector("#email").value;
     let inppass=document.querySelector("#password").value;
-    let inpcpass=document.querySelector("#cpassword").value;
+    let inpcpass=document.querySelector("#cpass").value;
 
     let errname=document.querySelector("#errname")
     let errnum=document.querySelector("#errnumber")
@@ -87,9 +87,9 @@ let submit=()=>{
     {
         errcpass.innerHTML="*Please enter same password"
         errcpass.style.color="red"
-        document.querySelector("#cpassword").style.border = "2px solid red"
-        document.querySelector("#cpassword").value=""
-        document.querySelector("#cpassword").focus()
+        document.querySelector("#cpass").style.border = "2px solid red"
+        document.querySelector("#cpass").value=""
+        document.querySelector("#cpass").focus()
         errname.innerHTML=""
         errnum.innerHTML=""
         errnum.innerHTML=""
@@ -117,6 +117,6 @@ let submit=()=>{
         alert("Sign-up successful! Redirecting to login...")
         location.href="Login.html";
 
-
-        return false
+    return false
 }
+

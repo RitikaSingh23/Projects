@@ -28,17 +28,47 @@ var typed = new Typed("#typed-text", {
 });
 
 // Login Form Validation
-document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault();
+let login=()=>{
+    let inpemail=document.querySelector("#email").value;
+    let inppass=document.querySelector("#password").value;
+    let inpnumber=document.querySelector("#number").value;
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
 
-    if (!email.includes("@") || password.length < 6) {
-        alert("Invalid email or password must be at least 6 characters!");
-        return;
+    let erremail=document.querySelector("#erroremail")
+    let errpass=document.querySelector("#errorpass")
+    let errnumber=document.querySelector("#errornumber")
+
+    let email=localStorage.getItem("E-mail")
+    let number=localStorage.getItem("Number")
+    let pass=localStorage.getItem("Password")
+
+ 
+
+    if(inpemail!=email){
+       erremail.innerHTML="*invalid e-mail";
+       erremail.style.color="red"
+       return false
+    }
+   
+    else if(inppass!=pass){
+        errpass.innerHTML="*invalid password";
+        errpass.style.color="red"
+        erremail.innerHTML=""
+       
+       return false
+
+    }
+    else if(inpnumber!=number){
+        errnumber.innerHTML="*invalid number";
+        errnumber.style.color="red"
+        erremail.innerHTML=""
+        errpass.innerHTML="";
+
+       return false
+
     }
 
-    alert("Login successful! Redirecting to home...");
-    window.location.href = "home.html";
-});
+    location.href="Home.html"
+    return false
+     
+}

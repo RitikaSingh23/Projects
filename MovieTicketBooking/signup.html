@@ -15,7 +15,7 @@
 <body>
 
     <!-- Background Animation -->
-    <div id="bg-animation"></div>
+    <div id="bg-animation">
 
     <!-- Sign-Up Container -->
     <div class="signup-container" data-aos="fade-up" data-aos-duration="3000">
@@ -34,24 +34,13 @@
             <div data-aos="fade-left" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="password" placeholder="Password" required /></div>
 
             <p id="errcpass"></p>
-            <div data-aos="fade-left" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="cpassword" placeholder="Password" required /></div>
+            <div data-aos="fade-right" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="cpass" placeholder="Confirm Password" required /></div>
 
-            <input type="submit" value="signup" onclick="return submit()">
-            <!-- <button type="submit" onclick=" return submit()">Sign Up</button> -->
+            <button type="submit" onclick=" return sub()">Sign Up</button>
         </form>
         <p>Already have an account? <a href="login.html">Login</a></p>
     </div>
-
-    <!-- Movie Slider
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="movie1.jpg" alt="Movie 1"></div>
-            <div class="swiper-slide"><img src="movie2.jpg" alt="Movie 2"></div>
-            <div class="swiper-slide"><img src="movie3.jpg" alt="Movie 3"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div> -->
-
+    </div>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
@@ -59,6 +48,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="signup.js"></script>
+    <script src="vanta_signup.js"></script>
 
 </body>
 </html>
