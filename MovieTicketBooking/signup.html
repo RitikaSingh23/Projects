@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Movie Ticket Booking</title>
+    <title></title>
 
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -21,19 +21,23 @@
     <div class="signup-container" data-aos="fade-up" data-aos-duration="3000">
         <h2>Sign Up for <span id="typed-text"></span></h2>
         <form id="signupForm">
+            <p id="errname"></p>
             <div data-aos="fade-right" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="text" id="name" placeholder="Full Name" required /></div>
+
+            <p id="errnumber"></p>
             <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="text" id="number" placeholder="Mobile Number" required /></div>
+
+            <p id="erremail"></p>
             <div data-aos="fade-right" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="email" id="email" placeholder="Email Address" required /></div>
+
+            <p id="errpass"></p>
             <div data-aos="fade-left" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="password" placeholder="Password" required /></div>
 
+            <p id="errcpass"></p>
+            <div data-aos="fade-left" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="cpassword" placeholder="Password" required /></div>
 
-
-            <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="confirmPassword" placeholder="Confirm Password" required /></div>
-            
-            <!-- <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine"><input type="password" id="confirmPassword" placeholder="Confirm Password" required /></div> -->
-
-
-            <button type="submit">Sign Up</button>
+            <input type="submit" value="signup" onclick="return submit()">
+            <!-- <button type="submit" onclick=" return submit()">Sign Up</button> -->
         </form>
         <p>Already have an account? <a href="login.html">Login</a></p>
     </div>

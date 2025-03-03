@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Background Animation */
@@ -56,7 +56,7 @@ button:hover {
     background: #e04e00;
 }
 
-/* Swiper Slider */
+/* Swiper Slider
 .swiper-container {
     width: 80%;
     max-width: 400px;
@@ -66,4 +66,4 @@ button:hover {
 .swiper-slide img {
     width: 100%;
     border-radius: 10px;
-}
+} */
