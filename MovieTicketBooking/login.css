@@ -26,7 +26,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
     width: 300px;
 }
 
@@ -56,6 +56,11 @@ button:hover {
     background: #e04e00;
 }
 
+#show:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}
 /* Swiper Slider */
 .swiper-container {
     width: 80%;

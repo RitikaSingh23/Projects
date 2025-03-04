@@ -1,42 +1,46 @@
-// Vanta.js Background Animation
-VANTA.WAVES({
-  el: "#bg-animation",
-  color: 0xff5a00,
-  shininess: 50,
-  waveHeight: 20,
-  waveSpeed: 0.5,
+// VANTA.js Configuration
+VANTA.BIRDS({
+  el: "#vanta-bg",
+  mouseControls: true, 
+  touchControls: true, 
+  minHeight: 200.00, 
+  minWidth: 200.00, 
+  speed: 1.00, 
+  density: 150.00 
 });
 
-// Initialize AOS (Animations)
-AOS.init();
+// Typed.js Configuration
+const options = {
+  strings: ["Book Your Tickets Now!", "Find the Latest Movies!", "Enjoy with Friends!"],
+  typeSpeed: 50,
+  backSpeed: 25,
+  loop: true
+};
 
-// Initialize Swiper.js
-var swiper = new Swiper(".swiper-container", {
+new Typed("#typed", options);
+
+// Swiper.js Initialization
+const swiper = new Swiper('.swiper-container', {
   loop: true,
   pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
   },
 });
 
-// Typed.js for Animated Text
-var typed = new Typed("#typed-text", {
-  strings: ["Tickets", "Seats", "Popcorn", "Movies!"],
-  typeSpeed: 100,
-  backSpeed: 50,
+// Swiper.js Initialization1
+const swiper1 = new Swiper('.swiper-container1', {
   loop: true,
-});
-
-// Booking Form Validation
-document.getElementById("bookingForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  var movie = document.getElementById("movieSelect").value;
-  var date = document.getElementById("dateSelect").value;
-
-  if (movie === "Select a Movie" || !date) {
-      alert("Please select a movie and date!");
-  } else {
-      alert("Your tickets for " + movie + " on " + date + " are booked!");
-  }
+  pagination: {
+      el: '.swiper-pagination1',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next1',
+      prevEl: '.swiper-button-prev1',
+  },
 });

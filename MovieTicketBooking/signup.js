@@ -120,3 +120,26 @@ let sub=()=>{
     return false
 }
 
+let show=()=>
+{
+    let pass=document.querySelector("#password")
+    if(pass.type=="password")
+    {
+        pass.type="text";
+    }
+    else{
+        pass.type="password";
+    }
+}
+
+let cshow=()=>
+{
+    let cpass=document.querySelector("#cpass")
+    if(cpass.type=="password")
+    {
+        cpass.type="text";
+    }
+    else{
+        cpass.type="password";
+    } 
+}

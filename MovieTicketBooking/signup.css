@@ -21,7 +21,9 @@ body {
     /* z-index: -1;*/
     display: flex;
     justify-content: center;
-    padding-top: 3%;
+    /* padding-top: 3%; */
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Sign-Up Container */
@@ -29,9 +31,9 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    /* text-align: center; */
     width: 300px;
-    height: 70%; 
+    /* height: 80%;  */
 }
 
 h2 {
@@ -60,14 +62,9 @@ button:hover {
     background: #e04e00;
 }
 
-/* Swiper Slider */
-/* .swiper-container {
-    width: 80%;
-    max-width: 400px;
-    margin-top: 20px;
+#show:hover
+{
+    color: #e04e00;
+    cursor: pointer;
 }
 
-.swiper-slide img {
-    width: 100%;
-    border-radius: 10px;
-} */

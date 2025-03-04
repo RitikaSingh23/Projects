@@ -4,77 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Ticket Booking</title>
-
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <!-- Background Animation -->
-    <div id="bg-animation"></div>
-
-    <!-- Navbar -->
+    <div id="vanta-bg"></div>
     <nav class="navbar">
-        <h2 class="logo">🔖🎟Boook It Up</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
+        <div class="logo">MovieTickets</div>
+        <ul class="nav-links">
+            <li><a href="#movies">Now Showing</a></li>
+            <li><a href="#upcoming">Upcoming</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Book Your <span id="typed-text"></span></h1>
-        <p>Experience the best movies in town!</p>
-        <a href="#movies" class="btn">View Movies</a>
+    
+    <header>
+        <h1>Book Your Movie Tickets</h1>
+        <div id="typed"></div>
     </header>
 
-    <!-- Movie Slider -->
-    <section id="movies" class="movies-section" data-aos="fade-up">
+    <section id="movies">
         <h2>Now Showing</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="movie1.jpg" alt="Movie 1"></div>
-                <div class="swiper-slide"><img src="movie2.jpg" alt="Movie 2"></div>
-                <div class="swiper-slide"><img src="movie3.jpg" alt="Movie 3"></div>
+                <div class="swiper-slide"><img src="movie1.jpg" alt="Movie 1"><p>Movie Title 1</p></div>
+                <div class="swiper-slide"><img src="movie2.jpg" alt="Movie 2"><p>Movie Title 2</p></div>
+                <div class="swiper-slide"><img src="movie3.jpg" alt="Movie 3"><p>Movie Title 3</p></div>
+                <!-- Add more slides as needed -->
             </div>
+            <!-- Add Pagination and Navigation -->
             <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section class="booking-section" data-aos="fade-up">
-        <h2>Book Your Tickets</h2>
-        <form id="bookingForm">
-            <select id="movieSelect">
-                <option>Select a Movie</option>
-                <option value="Movie 1">Movie 1</option>
-                <option value="Movie 2">Movie 2</option>
-                <option value="Movie 3">Movie 3</option>
-            </select>
-            <input type="date" id="dateSelect" required>
-            <button type="submit">Book Now</button>
-        </form>
+    <section id="romantic">
+        <h2>Romantic</h2>
+        <div class="swiper-container1">
+            <div class="swiper-wrapper1">
+                <div class="swiper-slide1"><img src="movie1.jpg" alt="Movie 1"><p>Movie Title 1</p></div>
+                <div class="swiper-slide1"><img src="movie2.jpg" alt="Movie 2"><p>Movie Title 2</p></div>
+                <div class="swiper-slide1"><img src="movie3.jpg" alt="Movie 3"><p>Movie Title 3</p></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination and Navigation -->
+            <div class="swiper-pagination1"></div>
+            <div class="swiper-button-next1"></div>
+            <div class="swiper-button-prev1"></div>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2025 MovieMania. All Rights Reserved.</p>
+        <p>&copy; 2023 Movie Ticket Booking | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.23/vanta.birds.min.js"></script>
     <script src="home.js"></script>
-
 </body>
 </html>
