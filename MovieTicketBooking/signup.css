@@ -68,3 +68,12 @@ button:hover {
     cursor: pointer;
 }
 
+a{
+    color: #ff5a00;;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}

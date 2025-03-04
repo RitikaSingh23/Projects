@@ -61,14 +61,12 @@ button:hover {
     color: #e04e00;
     cursor: pointer;
 }
-/* Swiper Slider */
-.swiper-container {
-    width: 80%;
-    max-width: 400px;
-    margin-top: 20px;
+a{
+    color: #ff5a00;;
+    text-decoration: none;
 }
-
-.swiper-slide img {
-    width: 100%;
-    border-radius: 10px;
+a:hover
+{
+    color: #e04e00;
+    cursor: pointer;
 }
