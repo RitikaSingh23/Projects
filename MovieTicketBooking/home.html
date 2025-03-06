@@ -5,64 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Ticket Booking</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div id="vanta-bg"></div>
-    <nav class="navbar">
-        <div class="logo">BookIt Up</div>
-        <ul class="nav-links">
-            <li><a href="#movies">Now Showing</a></li>
-            <li><a href="#upcoming">Upcoming</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
-    
+
+    <div id="vanta-bg"></div> 
+
     <header>
-        <h1>Book Your Movie Tickets</h1>
-        <div id="typed"></div>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="first">
+        <h1>Welcome to <span id="typed"></span></h1>
+        <button class="book-now"><a href="book.html">Book now</a></button>
+    </div>
 
-    <section id="movies">
-        <h2>Now Showing</h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="movie1.jpg" alt="Movie 1"><p>Movie Title 1</p></div>
-                <div class="swiper-slide"><img src="movie2.jpg" alt="Movie 2"><p>Movie Title 2</p></div>
-                <div class="swiper-slide"><img src="movie3.jpg" alt="Movie 3"><p>Movie Title 3</p></div>
-                <!-- Add more slides as needed -->
-            </div>
-            <!-- Add Pagination and Navigation -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-
-    <section id="romantic">
-        <h2>Romantic</h2>
-        <div class="swiper-container1">
-            <div class="swiper-wrapper1">
-                <div class="swiper-slide1"><img src="movie1.jpg" alt="Movie 1"><p>Movie Title 1</p></div>
-                <div class="swiper-slide1"><img src="movie2.jpg" alt="Movie 2"><p>Movie Title 2</p></div>
-                <div class="swiper-slide1"><img src="movie3.jpg" alt="Movie 3"><p>Movie Title 3</p></div>
-                <!-- Add more slides as needed -->
-            </div>
-            <!-- Add Pagination and Navigation -->
-            <div class="swiper-pagination1"></div>
-            <div class="swiper-button-next1"></div>
-            <div class="swiper-button-prev1"></div>
-        </div>
-    </section>
-
+    
+    <!-- footer -->
     <footer>
-        <p>&copy; 2023 Movie Ticket Booking | <a href="#">Terms</a> | <a href="#">Privacy</a></p>
+        
+    
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+    
+            <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.23/vanta.birds.min.js"></script>
     <script src="home.js"></script>
+
 </body>
 </html>

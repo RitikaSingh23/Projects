@@ -1,46 +1,17 @@
-// VANTA.js Configuration
-VANTA.BIRDS({
+// Vanta.js Background Effect
+VANTA.NET({
   el: "#vanta-bg",
-  mouseControls: true, 
-  touchControls: true, 
-  minHeight: 200.00, 
-  minWidth: 200.00, 
-  speed: 1.00, 
-  density: 150.00 
+  color: 0xff5733,
+  backgroundColor: 0x000000,
+  points: 12.0,
+  maxDistance: 20.0
 });
 
-// Typed.js Configuration
-const options = {
-  strings: ["Book Your Tickets Now!", "Find the Latest Movies!", "Enjoy with Friends!"],
+// Typed.js Effect
+var typed = new Typed("#typed", {
+  strings: ["Movie Ticket Booking", "Your Favorite Movies", "Best Cinema Experience"],
   typeSpeed: 50,
-  backSpeed: 25,
+  backSpeed: 30,
   loop: true
-};
-
-new Typed("#typed", options);
-
-// Swiper.js Initialization
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
 });
 
-// Swiper.js Initialization1
-const swiper1 = new Swiper('.swiper-container1', {
-  loop: true,
-  pagination: {
-      el: '.swiper-pagination1',
-      clickable: true,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next1',
-      prevEl: '.swiper-button-prev1',
-  },
-});

@@ -2,6 +2,7 @@
 VANTA.WAVES({
     el: "#bg-animation",
     color: 0xff5a00,
+    // color: 0xff5733,
     shininess: 50,
     waveHeight: 20,
     waveSpeed: 0.5,
@@ -73,13 +74,16 @@ let login=()=>{
      
 }
 let pshow=()=>
+{
+    let password=document.querySelector("#password")
+    let textt=document.querySelector("#show")
+    if(password.type=="password")
     {
-        let password=document.querySelector("#password")
-        if(password.type=="password")
-        {
-            password.type="text";
-        }
-        else{
-            password.type="password";
-        } 
+    password.type="text";
+    textt.innerHTML="Hide";
     }
+    else{
+    password.type="password";
+    textt.innerHTML="Show";
+    } 
+}

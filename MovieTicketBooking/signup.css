@@ -67,6 +67,11 @@ button:hover {
     color: #e04e00;
     cursor: pointer;
 }
+#cshow:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}
 
 a{
     color: #ff5a00;;

@@ -123,23 +123,29 @@ let sub=()=>{
 let show=()=>
 {
     let pass=document.querySelector("#password")
+    let textt=document.querySelector("#show")
     if(pass.type=="password")
     {
         pass.type="text";
+        textt.innerHTML="Hide";
     }
     else{
         pass.type="password";
+        textt.innerHTML="Show";
     }
 }
 
 let cshow=()=>
 {
     let cpass=document.querySelector("#cpass")
+    let textt=document.querySelector("#cshow")
     if(cpass.type=="password")
     {
         cpass.type="text";
+        textt.innerHTML="Hide";
     }
     else{
         cpass.type="password";
+        textt.innerHTML="Show";
     } 
 }

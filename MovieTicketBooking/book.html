@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets | MovieBook</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="vanta-bg">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="booking-container">
+        <h2>Book Your Tickets</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="movie"><i class="fa-solid fa-film"></i> Select Movie</label>
+                <select id="movie" required>
+                    <option value="" disabled selected>Choose a movie</option>
+                    <option value="Movie 1">Movie 1</option>
+                    <option value="Movie 2">Movie 2</option>
+                    <option value="Movie 3">Movie 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date"><i class="fa-solid fa-calendar"></i> Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="seats"><i class="fa-solid fa-chair"></i> Number of Tickets</label>
+                <input type="number" id="seats" min="1" max="10" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time"><i class="fa-solid fa-clock"></i> Select Show Time</label>
+                <select id="time" required>
+                    <option value="" disabled selected>Choose a time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                </select>
+            </div>
+
+            <!-- Seat Selection -->
+            <div class="form-group">
+                <label><i class="fa-solid fa-chair"></i> Select Seats</label>
+                <div class="seat-grid">
+                    <!-- Seats will be generated here via JavaScript -->
+                </div>
+            </div>
+
+            <!-- <button type="submit" class="book-now"><i class="fa-solid fa-ticket"></i> Confirm Booking</button> -->
+
+            <!-- Payment Buttons -->
+            <div class="payment-methods">
+                <button class="paypal-btn"><i class="fa-brands fa-paypal"></i> Pay with PayPal</button>
+                <button class="stripe-btn"><i class="fa-solid fa-credit-card"></i> Pay with Stripe</button>
+            </div>
+
+            <button type="submit" class="book-now"><i class="fa-solid fa-ticket"></i> Confirm Booking</button>
+        </form>
+
+        <p id="success-message" class="hidden">🎉 Your booking is confirmed! 🎟️</p>
+    </section>
+    <footer>
+        
+    
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+    
+            <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+    <script src="book.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
