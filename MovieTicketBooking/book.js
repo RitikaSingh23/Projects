@@ -26,15 +26,6 @@ document.getElementById("booking-form").addEventListener("submit", function(even
     }
 });
 
-// Vanta.js Background Effect
-VANTA.NET({
-    el: "#vanta-bg",
-    color: 0xff5733,
-    backgroundColor: 0x000000,
-    points: 12.0,
-    maxDistance: 20.0
-});
-
 // Generate Seat Selection Grid
 const seatGrid = document.querySelector(".seat-grid");
 const seats = 100; // Total seats
@@ -55,25 +46,25 @@ for (let i = 1; i <= seats; i++) {
 }
 
 // Booking Form Submission
-document.getElementById("booking-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+// document.getElementById("booking-form").addEventListener("submit", function(event) {
+//     event.preventDefault();
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let movie = document.getElementById("movie").value;
-    let time = document.getElementById("time").value;
-    let selectedSeats = document.querySelectorAll(".seat.selected").length;
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let movie = document.getElementById("movie").value;
+//     let time = document.getElementById("time").value;
+//     let selectedSeats = document.querySelectorAll(".seat.selected").length;
 
-    if (name && email && movie && time && selectedSeats > 0) {
-        document.getElementById("success-message").classList.remove("hidden");
-        this.reset();
-        setTimeout(() => {
-            document.getElementById("success-message").classList.add("hidden");
-        }, 3000);
-    } else {
-        alert("Please complete all fields and select at least one seat!");
-    }
-});
+//     if (name && email && movie && time && selectedSeats > 0) {
+//         document.getElementById("success-message").classList.remove("hidden");
+//         this.reset();
+//         setTimeout(() => {
+//             document.getElementById("success-message").classList.add("hidden");
+//         }, 3000);
+//     } else {
+//         alert("Please complete all fields and select at least one seat!");
+//     }
+// });
 
 // PayPal Payment
 document.querySelector(".paypal-btn").addEventListener("click", () => {

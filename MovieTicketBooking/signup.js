@@ -10,15 +10,6 @@ VANTA.WAVES({
 // Initialize AOS (Animations)
 AOS.init();
 
-// Initialize Swiper.js
-var swiper = new Swiper(".swiper-container", {
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
 // Typed.js for Animated Text
 var typed = new Typed("#typed-text", {
     strings: ["Movies🎬", "Tickets🎞", "Fun😃", "Popcorn🍿!"],

@@ -30,6 +30,10 @@ body {
     width: 300px;
 }
 
+.login-container i{
+    color: #ff5a00;
+}
+
 h2 {
     margin-bottom: 15px;
 }
@@ -38,7 +42,7 @@ input {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: none;
+    border: 2px solid orangered;
     border-radius: 5px;
 }
 

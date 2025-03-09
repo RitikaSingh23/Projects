@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ticket.css">
+    <!-- Vanta.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.birds.min.js"></script>
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- Typed.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div id="vanta-bg"></div>
+
+    <div class="container" data-aos="fade-up">
+        <h1><span id="typed"></span></h1>
+
+        <!-- Movie Selection -->
+        <label for="movie">Choose a movie:</label>
+        <select id="movie">
+            <option value="10">Avengers: Endgame ($10)</option>
+            <option value="12">Joker ($12)</option>
+            <option value="15">Interstellar ($15)</option>
+        </select>
+
+        <!-- Seat Selection -->
+        <div class="seat-container" data-aos="zoom-in">
+            <p>Select Your Seat:</p>
+            <div class="seats">
+                <button class="seat"></button>
+                <button class="seat"></button>
+                <button class="seat"></button>
+                <button class="seat"></button>
+                <button class="seat"></button>
+            </div>
+        </div>
+
+        <!-- Date & Time -->
+        <label for="date">Select Date:</label>
+        <input type="date" id="date">
+
+        <label for="time">Select Time:</label>
+        <select id="time">
+            <option>12:00 PM</option>
+            <option>3:00 PM</option>
+            <option>6:00 PM</option>
+            <option>9:00 PM</option>
+        </select>
+
+        <!-- Booking Button -->
+        <button id="book-btn">Book Now</button>
+
+        <!-- Total Price -->
+        <p class="total">Total: $<span id="total-price">0</span></p>
+    </div>
+
+    <script src="ticket.js"></script>
+</body>
+</html>
