@@ -1,7 +1,7 @@
 // Vanta.js Background Animation
 VANTA.WAVES({
     el: "#bg-animation",
-    color: 0xff5a00,
+    color: 0xff5733,
     shininess: 50,
     waveHeight: 20,
     waveSpeed: 0.5,
