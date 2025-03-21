@@ -1,12 +1,3 @@
-// Vanta.js Background Effect
-VANTA.NET({
-    el: "#vanta-bg",
-    color: 0xff5733,
-    backgroundColor: 0x000000,
-    points: 12.0,
-    maxDistance: 20.0
-});
-
 // Booking Form Validation
 document.getElementById("booking-form").addEventListener("submit", function(event) {
     event.preventDefault();
