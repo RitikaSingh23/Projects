@@ -6,6 +6,8 @@
   font-family:cursive;
 }
 
+html{scroll-behavior: smooth;}
+
 body {
     color: white;
     background: black;
@@ -64,7 +66,6 @@ body {
     font-weight: 500;
     /* transition: 0.3s; */
 }
-
 .nav-links a:hover {
     color: #ff5733;
 }

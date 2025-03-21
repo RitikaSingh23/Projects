@@ -73,45 +73,62 @@ body {
 .booking-container {
     margin: 120px auto;
     padding: 20px;
-    width: 90%;
+    /* width: 90%; */
     max-width: 500px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
-    text-align: center;
+    text-align:start;
     z-index:-1;
 }
 
-.booking-container h2 {
+h2 {
     margin-bottom: 15px;
-    color: white;
+    text-align: center;
 }
 
-.form-group {
-    margin: 15px 0;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: white;
-    font-weight: 500;
-}
-
-.form-group i {
-    color: #ff5733;
-    margin-right: 8px;
-}
-
-.form-group input, .form-group select {
-    width: 100%;
+input {
+    width: 90%;
     padding: 10px;
-    border: none;
+    margin: 10px 0;
+    border: 2px solid orangered;
     border-radius: 5px;
-    font-size: 16px;
 }
 
+button {
+    width: 90%;
+    padding: 10px;
+    background: #ff5a00;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e04e00;
+}
+
+#show:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}
+#cshow:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}
+
+a{
+    color: #ff5a00;;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #e04e00;
+    cursor: pointer;
+}
 .book-now {
     margin-top: 20px;
     padding: 10px 20px;

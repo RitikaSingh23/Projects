@@ -27,9 +27,101 @@
 
     <!-- Booking Form -->
     <section class="booking-container">
-        <h2>Book Your Tickets</h2>
+        <h2 id="head">Book Your Tickets</h2>
         <form id="booking-form">
-            <div class="form-group">
+            <p id="errname"></p>
+            <div class="input-group" data-aos="fade-right" data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <i class="fa fa-user"></i> Name:
+                <input type="text" id="name" placeholder="Full Name" required />
+            </div>
+
+            <p id="errnumber"></p>
+            <div class="input-group" data-aos="fade-left"data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <i class="fa fa-phone"></i> Mobile Number:
+                <input type="text" id="number" placeholder="Mobile Number" required />
+            </div>
+
+            <p id="erremail"></p>
+            <div class="input-group" data-aos="fade-right"data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <i class="fa fa-envelope"></i> Email:
+                <input type="email" id="email" placeholder="Email Address" required />
+            </div>
+
+            <p id="errdate" ></p>
+            <div class="input-group" data-aos="fade-up" data-aos-duration="3000">
+                <label for="date"><i class="fa-solid fa-calendar"></i> Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <p id="errseat" ></p>
+            <div class="input-group" data-aos="fade-up" data-aos-duration="3000">
+                <label for="seats"><i class="fa-solid fa-chair"></i> Number of Tickets</label>
+                <input type="number" id="seats" min="1" max="10" value="1" required>
+            </div><br>
+
+            <p id="errmovie"></p>
+            <div class="input-group" data-aos="fade-left"data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <label for="movie"><i class="fa-solid fa-film"></i> Select Movie:</label>
+                <select id="movie" required>
+                    <option value="" disabled selected>Choose a movie</option>
+                    <option value="Movie 1">Movie 1</option>
+                    <option value="Movie 2">Movie 2</option>
+                    <option value="Movie 3">Movie 3</option>
+                </select>
+            </div><br>
+
+            <p id="errtime" ></p>
+            <div class="input-group" data-aos="fade-up" data-aos-duration="3000">
+                <label for="time"><i class="fa-solid fa-clock"></i> Select Show Time</label>
+                <select id="time" required>
+                    <option value="" disabled selected>Choose a time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="10:00 PM">10:00 PM</option>
+                </select>
+            </div><br>
+
+         <button type="submit" class="book-now" onclick="return sub()"><i class="fa-solid fa-ticket"></i> Confirm Booking</button>
+        </form>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+    
+            <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+    <script src="book.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+ <!-- <div class="form-group">
                 <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
                 <input type="text" id="name" placeholder="Enter your full name" required>
             </div>
@@ -69,63 +161,23 @@
                     <option value="7:00 PM">7:00 PM</option>
                     <option value="10:00 PM">10:00 PM</option>
                 </select>
-            </div>
+            </div> -->
 
             <!-- Seat Selection -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label><i class="fa-solid fa-chair"></i> Select Seats</label>
                 <div class="seat-grid">
-                    <!-- Seats will be generated here via JavaScript -->
-                </div>
-            </div>
+                Seats will be generated here via JavaScript -->
+                <!-- </div>
+            </div> -->
 
             <!-- <button type="submit" class="book-now"><i class="fa-solid fa-ticket"></i> Confirm Booking</button> -->
 
             <!-- Payment Buttons -->
-            <div class="payment-methods">
+            <!-- <div class="payment-methods">
                 <button class="paypal-btn"><i class="fa-brands fa-paypal"></i> Pay with PayPal</button>
                 <button class="stripe-btn"><i class="fa-solid fa-credit-card"></i> Pay with Stripe</button>
-            </div>
-
-            <button type="submit" class="book-now"><i class="fa-solid fa-ticket"></i> Confirm Booking</button>
-        </form>
-
-        <p id="success-message" class="hidden">🎉 Your booking is confirmed! 🎟️</p>
-    </section>
-    <footer>
-        
-    
-        <div class="footer-container">
-            <div class="footer-logo">
-                <i class="fa-solid fa-film"></i> Book It UP!
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-    
-            <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
-        </div>
-    </footer>
-    </div>
-    <!-- JavaScript Files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
-    <script src="book.js"></script>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
+            </div> -->
 
 
 
