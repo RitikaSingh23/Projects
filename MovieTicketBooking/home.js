@@ -26,3 +26,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+let logout=()=>{
+  localStorage.clear()
+  location.href="login.html"
+}
