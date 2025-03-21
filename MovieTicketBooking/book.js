@@ -1,11 +1,11 @@
+// Typed.js Effect
+var typed = new Typed("#typed", {
+    strings: ["Movies🎬", "Tickets🎞", "Fun😃", "Popcorn🍿!"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
 // Booking Form Validation
-let date=new Date();
-let year= date.getFullYear()
-let month= date.getMonth()
-let datee=date.getDate()
-let hourr=date.getHours()
-let min=date.getMinutes()
-
 let sub=()=>{
     let inpname=document.querySelector("#name").value;
     let inpnum=document.querySelector("#number").value;
@@ -30,7 +30,7 @@ let sub=()=>{
         errname.innerHTML="*Please fill the name field"
         errname.style.color="red"
         document.querySelector("#name").style.border = "2px solid red"
-        document.querySelector("#name")
+        document.querySelector("#name").focus()
         return false;
     }
 

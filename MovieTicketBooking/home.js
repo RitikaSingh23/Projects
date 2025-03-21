@@ -25,8 +25,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-let logout=()=>{
-  localStorage.clear()
-  location.href="login.html"
-}
