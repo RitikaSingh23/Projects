@@ -102,6 +102,11 @@ td{
 #head{
     text-align: center;
 }
+#pag
+{
+    display: flex;
+    justify-content: center;
+}
 #formm
 {
     text-align: start;

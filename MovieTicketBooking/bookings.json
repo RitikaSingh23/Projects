@@ -23,6 +23,18 @@
       "Movie": "Conjuring",
       "Time": "7:00 PM",
       "id": "9076"
+    },
+    {
+      "id": "9100",
+      "Name": "Anjali",
+      "Number": "3547896412",
+      "Email": "anjali@gmail.com",
+      "Date": "2025-03-26",
+      "Seat": "5",
+      "Location": "Goa",
+      "Cinema": "DDX",
+      "Movie": "Stree",
+      "Time": "4:00 PM"
     }
   ]
 }

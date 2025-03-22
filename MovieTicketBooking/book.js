@@ -5,7 +5,7 @@ let bring =async()=>{
     let response =await fetch(url,{method:"GET"})
     let data=await response.json()
     // console.log(data)
-    DataShow(data)
+    paginationn(data)
 }
 
 let searchh=async()=>{
@@ -23,9 +23,34 @@ let searchh=async()=>{
   
     })
   
-    DataShow(Filterdata)
+    paginationn(Filterdata)
   
   }
+
+let paginationn=(data)=>{
+//   $('#pag').pagination({
+//     dataSource: data,
+//     pageSize: 5,
+//     showGoInput: true,
+//     showGoButton: true,
+//     callback: function(data, pagination) {
+//        DataShow(data)
+//     }
+// })
+
+
+$('#pag').pagination({
+    dataSource: data,
+    pageSize: 5,
+    showPrevious: false,
+    showNext: false,
+    callback: function(data, pagination) {
+       DataShow(data)
+    }
+})
+}
+
+
   
   let DataShow=(data)=>{
       let tb=document.querySelector("#show")
@@ -185,41 +210,6 @@ let searchh=async()=>{
       return false;
   
   }
-//   let insertt=()=>{
-//     let inpname=document.querySelector("#name").value;
-//     let inpnum=document.querySelector("#number").value;
-//     let inpemail=document.querySelector("#email").value;
-//     let inpdate=document.querySelector("#date").value;
-//     let inpseat=document.querySelector("#seats").value;
-//     let inploc=document.querySelector("#location").value;
-//     let inpcinema=document.querySelector("#cinema").value;
-//     let inpmovie=document.querySelector("#movie").value;
-//     let inptime=document.querySelector("#time").value;
-  
-//       let url='http://localhost:3000/Detail'
-  
-//       fetch(url,{
-//           method:"POST",
-//           headers:{
-//               "Content-type":"application/json"
-//           },
-//           body:JSON.stringify(
-//               {
-//               "Name":inpname,
-//               "Number" :inpnum,
-//               "Email":inpemail,
-//               "Date":inpdate,
-//               "Seat":inpseat,
-//               "Location":inploc,
-//               "Cinema":inpcinema,
-//               "Movie":inpmovie,
-//               "Time":inptime,
-//               }
-//           )
-//       })
-//       return false;
-//   }
-
 // Typed.js Effect
 var typed = new Typed("#typed", {
     strings: ["Movies🎬", "Tickets🎞", "Fun😃", "Popcorn🍿!"],
@@ -414,8 +404,10 @@ let sub=()=>{
         errcinema.innerHTML=""
         return false;
     }
-    alert("done")
+    let amt =inpseat*250;
 
+    alert(`Your seats are booked , you have payed ${amt} for ${inpseat} seats`)
+    
     let url='http://localhost:3000/Detail'
   
     fetch(url,{
