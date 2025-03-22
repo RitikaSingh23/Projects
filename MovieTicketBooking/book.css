@@ -152,59 +152,6 @@ a:hover
     font-size: 16px;
 }
 
-
-/* Seat Selection Grid */
-.seat-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 40px);
-    gap: 10px;
-    margin: 10px 0;
-    justify-content: center;
-}
-
-.seat {
-    width: 40px;
-    height: 40px;
-    background: grey;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.seat.selected {
-    background: #ff5733;
-}
-
-.seat.occupied {
-    background: red;
-    cursor: not-allowed;
-}
-
-/* Payment Buttons */
-.payment-methods {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.paypal-btn, .stripe-btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.paypal-btn {
-    background: #0070ba;
-    color: white;
-}
-
-.stripe-btn {
-    background: #6366f1;
-    color: white;
-}
-
 /* Footer Styling */
 footer {
     /* position: relative; */

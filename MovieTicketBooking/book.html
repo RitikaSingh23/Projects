@@ -18,7 +18,7 @@
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="#">Movies</a></li>
-                <li><a href="#">Bookings</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -46,6 +46,7 @@
                 <i class="fa fa-envelope"></i> Email:
                 <input type="email" id="email" placeholder="Email Address" required />
             </div>
+            
 
             <p id="errdate" ></p>
             <div class="input-group" data-aos="fade-up" data-aos-duration="3000">
@@ -55,8 +56,34 @@
 
             <p id="errseat" ></p>
             <div class="input-group" data-aos="fade-up" data-aos-duration="3000">
-                <label for="seats"><i class="fa-solid fa-chair"></i> Number of Tickets</label>
+                <label for="seats"><i class="fa-solid fa-chair"></i> Number of Seats</label>
                 <input type="number" id="seats" min="1" max="10" value="1" required>
+            </div><br>
+
+            <p id="errloc"></p>
+            <div class="input-group" data-aos="fade-left"data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <label for="movie"><i class="fa-solid fa-location-dot"></i> Select Location:</label>
+                <select id="location" required>
+                    <option value="" disabled selected>Choose a City</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Jhansi">Jhansi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div><br>
+
+            <p id="errcinema"></p>
+            <div class="input-group" data-aos="fade-left"data-aos-offset="300"data-aos-duration="3000" data-aos-easing="ease-in-sine">
+                <label for="movie"><i class="fa-solid fa-house"></i> Select Cinema:</label>
+                <select id="cinema" required>
+                    <option value="" disabled selected>Choose a Cinema Hall</option>
+                    <option value="PVR">PVR</option>
+                    <option value="Cinepolis">Cinepolis</option>
+                    <option value="DDX">DDX</option>
+                    <option value="Inox">Inox</option>
+                    <option value="Drive In">Drive In</option>
+                </select>
             </div><br>
 
             <p id="errmovie"></p>
@@ -64,9 +91,12 @@
                 <label for="movie"><i class="fa-solid fa-film"></i> Select Movie:</label>
                 <select id="movie" required>
                     <option value="" disabled selected>Choose a movie</option>
-                    <option value="Movie 1">Movie 1</option>
-                    <option value="Movie 2">Movie 2</option>
-                    <option value="Movie 3">Movie 3</option>
+                    <option value="Sanam Teri kasam">Sanam Teri kasam</option>
+                    <option value="Chhaava">Chhaava</option>
+                    <option value="GOAT">GOAT</option>
+                    <option value="Thandel">Thandel</option>
+                    <option value="Stree">Stree</option>
+                    <option value="Conjuring">Conjuring</option>
                 </select>
             </div><br>
 
@@ -105,7 +135,7 @@
             <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
         </div>
     </footer>
-    </div>
+    
     <!-- JavaScript Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
@@ -114,75 +144,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
- <!-- <div class="form-group">
-                <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="movie"><i class="fa-solid fa-film"></i> Select Movie</label>
-                <select id="movie" required>
-                    <option value="" disabled selected>Choose a movie</option>
-                    <option value="Movie 1">Movie 1</option>
-                    <option value="Movie 2">Movie 2</option>
-                    <option value="Movie 3">Movie 3</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="date"><i class="fa-solid fa-calendar"></i> Date</label>
-                <input type="date" id="date" required>
-            </div>
-
-            <div class="form-group">
-                <label for="seats"><i class="fa-solid fa-chair"></i> Number of Tickets</label>
-                <input type="number" id="seats" min="1" max="10" value="1" required>
-            </div>
-
-            <div class="form-group">
-                <label for="time"><i class="fa-solid fa-clock"></i> Select Show Time</label>
-                <select id="time" required>
-                    <option value="" disabled selected>Choose a time</option>
-                    <option value="10:00 AM">10:00 AM</option>
-                    <option value="1:00 PM">1:00 PM</option>
-                    <option value="4:00 PM">4:00 PM</option>
-                    <option value="7:00 PM">7:00 PM</option>
-                    <option value="10:00 PM">10:00 PM</option>
-                </select>
-            </div> -->
-
-            <!-- Seat Selection -->
-            <!-- <div class="form-group">
-                <label><i class="fa-solid fa-chair"></i> Select Seats</label>
-                <div class="seat-grid">
-                Seats will be generated here via JavaScript -->
-                <!-- </div>
-            </div> -->
-
-            <!-- <button type="submit" class="book-now"><i class="fa-solid fa-ticket"></i> Confirm Booking</button> -->
-
-            <!-- Payment Buttons -->
-            <!-- <div class="payment-methods">
-                <button class="paypal-btn"><i class="fa-brands fa-paypal"></i> Pay with PayPal</button>
-                <button class="stripe-btn"><i class="fa-solid fa-credit-card"></i> Pay with Stripe</button>
-            </div> -->
-
-
-
-
-
-
-

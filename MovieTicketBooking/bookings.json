@@ -1,0 +1,28 @@
+{
+  "Detail": [
+    {
+      "Name": "khushi",
+      "Number": "7896321458",
+      "Email": "d@gmail.com",
+      "Date": "2025-03-26",
+      "Seat": "1",
+      "Location": "Indore",
+      "Cinema": "Inox",
+      "Movie": "Conjuring",
+      "Time": "7:00 PM",
+      "id": "56d9"
+    },
+    {
+      "Name": "Gauri",
+      "Number": "8120465895",
+      "Email": "d@gmail.com",
+      "Date": "2025-03-26",
+      "Seat": "1",
+      "Location": "Bhopal",
+      "Cinema": "Inox",
+      "Movie": "Conjuring",
+      "Time": "7:00 PM",
+      "id": "9076"
+    }
+  ]
+}

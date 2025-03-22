@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bookings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+
 </head>
-<body>
-    <script src="bookings.js"></script>
+<body onload="bring()">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    Search: <input type="text" id="searchinp" oninput="searchh()"><br>
+    <h1 style="text-align: center;">Detail of bookings</h1>
+<div id="bodyy">
+    <table id="tbl" border="2">
+        <Thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Email</th>
+                <th>Date</th>
+                <th>No of Seats</th>
+                <th>Location</th>
+                <th>Cinema</th>
+                <th>Movie</th>
+                <th>Time</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </Thead>
+        <tbody id="show">
+
+        </tbody>
+    </table>
+    <div id="frm"></div>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fa-solid fa-film"></i> Book It UP!
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+    
+            <p class="copyright">© 2025 BookItUP!. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="book.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </body>
 </html>
