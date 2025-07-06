@@ -1,0 +1,38 @@
+body{
+    display: flex;           
+    align-items: center;         
+    justify-content: center;     
+    height: 100vh;
+    background-image: url('cal4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+       
+    
+    
+}
+table{
+    border-radius: 20px;
+    /* background-image: url(img.avif);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border: 1px solid rgba(243, 230, 230, 0.26);
+
+    background-color: rgba(43, 42, 42, 0.749);
+}
+
+table tr td{
+    border-radius: 400px;
+    background-color: rgba(87, 85, 85, 0.522);
+    color: white;
+    
+
+}
+#sp{
+    background-color: rgba(227, 154, 52, 0.864);
+    font-size: medium;
+    font-style: initial;
+    color: black;
+    font-weight: bold;
+    
+}

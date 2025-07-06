@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <table  border="" cellspacing="20px" cellpadding="20px">
+
+        <tr>
+            <td colspan="4" id="display"></td>
+          </tr>
+
+          <tr>
+            <td id="sp" onclick="ac()">AC</td>
+            <td id="sp" onclick="del()">DEL</td>
+            <td onclick="calculate('/')" id="sp">/</td>
+            <td onclick="calculate('*')" id="sp">*</td>
+          </tr>
+
+          <tr>
+            <td onclick="calculate('7')">7</td>
+            <td onclick="calculate('8')">8</td>
+            <td onclick="calculate('9')">9</td>
+            <td onclick="calculate('-')" id="sp">-</td>
+          </tr>
+
+          <tr>
+            <td onclick="calculate('4')">4</td>
+            <td onclick="calculate('5')">5</td>
+            <td onclick="calculate('6')">6</td>
+            <td onclick="calculate('+')" id="sp">+</td>
+          </tr>
+
+          <tr>
+            <td onclick="calculate('1')">1</td>
+            <td onclick="calculate('2')">2</td>
+            <td onclick="calculate('3')">3</td>
+            <td onclick="calculate('%')" id="sp">%</td>
+          </tr>
+
+          <tr>
+            <td onclick="calculate('00')">00</td>
+            <td onclick="calculate('0')">0</td>
+            <td onclick="calculate('.')">.</td>
+            <td id="sp" onclick="res()">=</td>
+            <!-- <td id="sp" onclick="sq()">aq</td> -->
+
+          </tr>
+        
+        
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
