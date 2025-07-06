@@ -1,0 +1,22 @@
+.pi {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.divide {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  border: 2px gray;
+  background-color: rgb(237, 230, 222);
+}
+
+.diva img:hover {
+  scale: 1.1;
+}
+.diva img {
+  width: 200px;
+  height: 300px;
+  box-shadow: 6px 5px 4px 3px gray;
+}/*# sourceMappingURL=addcard.css.map */

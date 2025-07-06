@@ -1,0 +1,28 @@
+.pi{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+@mixin hover()
+{
+  img:hover
+  {
+    scale:1.1;
+  }
+}
+
+.divide{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    border: 2px gray;
+    background-color: rgb(237, 230, 222);
+}
+.diva{
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "Detail": [
+    {
+      "Name": "Gauri",
+      "Number": "8120465895",
+      "Email": "d@gmail.com",
+      "Date": "2025-03-26",
+      "Seat": "1",
+      "Location": "Indore",
+      "Cinema": "Cinepolis",
+      "Movie": "Conjuring",
+      "Time": "10:00 AM",
+      "id": "9076"
+    },
+    {
+      "id": "fe95",
+      "Name": "Ritika Singh",
+      "Number": "8127170357",
+      "Email": "rs@gmail.com",
+      "Date": "2025-06-28",
+      "Seat": "5",
+      "Location": "Indore",
+      "Cinema": "DDX",
+      "Movie": "Stree",
+      "Time": "7:00 PM"
+    }
+  ]
+}

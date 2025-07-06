@@ -1,0 +1,22 @@
+.pi{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+@mixin hover()
+{
+  img:hover
+  {
+    scale:1.1;
+  }
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+.BUTTON
+{
+  display: flex;
+  justify-content:center ;
+}

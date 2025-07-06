@@ -1,0 +1,117 @@
+@import'navbar.scss';
+@import'footer.scss';
+@import'productpage.scss';
+@import'productdetail.scss';
+@import'addcard.scss';
+@import'login.scss';
+@import'buynow.scss';
+@import'thankyou.scss';
+@mixin hover()
+{
+  img:hover
+  {
+    scale:1.1;
+  }
+}
+.container img
+{
+    width: 100vw;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.section
+{
+    img
+    {
+       width: 100vw;
+       height: 350px;
+       background-size: cover;
+       margin-bottom: 25px;
+    }
+}
+.section1
+{
+    display:flex ;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+.section2
+{
+    display:flex ;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: rgb(190, 107, 42);
+    padding: 10px;
+    border-radius: 20px;
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}
+.section3
+{
+    display:flex ;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+.section4
+{
+    display:flex ;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: rgb(69, 191, 142);
+    padding: 10px;
+    border-radius: 20px;
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}
+.section5
+{
+    display:flex ;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+.section6
+{
+    display:flex ;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: rgb(119, 111, 206);
+    padding: 10px;
+    border-radius: 20px;
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}
+.section7
+{
+    display:flex ;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+.section8
+{
+    display:flex ;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: rgb(226, 83, 193);
+    padding: 10px;
+    border-radius: 20px;
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}

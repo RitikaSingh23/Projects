@@ -1,0 +1,50 @@
+body
+{
+ background-color: rgb(246, 244, 244);
+ margin: 0%;
+}
+.navbar
+{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: rgb(255, 255, 255);
+ padding:10px 30px 10px 30px;
+ .div1
+ { 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    img
+    {
+     height: 50px;
+    }
+    ul
+    {
+     display: flex;
+     gap: 30px;
+     list-style: none;
+     li
+     {
+       sup
+       {
+         color: rgb(212, 9, 77);
+        }  
+      }
+    }
+  }
+  .div2
+  {
+    input
+    {
+      width: 400px;
+    }
+  }
+  .div3
+   {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 15px;
+   }
+}

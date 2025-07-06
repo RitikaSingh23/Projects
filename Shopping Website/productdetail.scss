@@ -1,0 +1,53 @@
+.pi{
+    margin-left: 20px;
+
+}
+@mixin hover()
+{
+  img:hover
+  {
+    scale:1.1;
+  }
+}
+
+.divide{
+    display: flex;
+    justify-content:center;
+    gap: 50px
+}
+.diva{
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}
+.sim1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(210, 147, 102);
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}
+.sim2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: darkslateblue;
+    @include hover();
+    img{
+        width: 200px;
+        height: 300px;
+        box-shadow: 6px 5px 4px 3px gray;
+    }
+}

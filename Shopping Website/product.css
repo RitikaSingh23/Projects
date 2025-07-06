@@ -1,0 +1,48 @@
+.main {
+  margin-left: 20px;
+}
+
+.div1 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.div1 .divb .seca {
+  display: flex;
+  justify-content: space-between;
+  gap: 1000PX;
+}
+
+.secb .section1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background-color: rgb(247, 244, 242);
+  padding: 10px;
+  border-radius: 20px;
+}
+.secb .section1 img:hover {
+  scale: 1.1;
+}
+.secb .section1 img {
+  width: 200px;
+  height: 300px;
+  box-shadow: 6px 5px 4px 3px rgb(122, 116, 116);
+}
+.secb .section2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background-color: rgb(248, 248, 248);
+  padding: 10px;
+  border-radius: 20px;
+}
+.secb .section2 img:hover {
+  scale: 1.1;
+}
+.secb .section2 img {
+  width: 200px;
+  height: 300px;
+  box-shadow: 6px 5px 4px 3px gray;
+}/*# sourceMappingURL=product.css.map */

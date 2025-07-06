@@ -1,0 +1,61 @@
+
+.main
+{
+    margin-left: 20px;
+}
+
+@mixin hover()
+{
+  img:hover
+  {
+    scale:1.1;
+  }
+}
+.div1
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    .divb
+    {
+        .seca
+        {
+            display: flex;
+            justify-content: space-between;
+            gap: 1000PX;
+        }
+    }
+
+}
+.secb{
+    .section1
+    {
+        display:flex ;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(28, 211, 46);
+        @include hover();
+        img{
+            width: 200px;
+            height: 300px;
+            box-shadow: 6px 5px 4px 3px rgb(122, 116, 116);
+        }
+    }
+    .section2
+    {
+        display:flex ;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        @include hover();
+        img{
+            width: 200px;
+            height: 300px;
+            box-shadow: 6px 5px 4px 3px gray;
+        }
+    }
+}

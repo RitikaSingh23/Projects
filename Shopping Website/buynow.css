@@ -1,0 +1,15 @@
+.pi {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.BUTTON {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=buynow.css.map */

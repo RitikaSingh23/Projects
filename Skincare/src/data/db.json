@@ -1,0 +1,22 @@
+{
+  "skincare":[
+  {
+    "id": 1,
+    "name": "Hydrating Face Wash",
+    "price": "$12.99",
+    "image": "https://via.placeholder.com/200x200.png?text=Face+Wash"
+  },
+  {
+    "id": 2,
+    "name": "Vitamin C Serum",
+    "price": "$19.99",
+    "image": "https://via.placeholder.com/200x200.png?text=Serum"
+  },
+  {
+    "id": 3,
+    "name": "Daily Moisturizer",
+    "price": "$15.99",
+    "image": "https://via.placeholder.com/200x200.png?text=Moisturizer"
+  }
+]
+}

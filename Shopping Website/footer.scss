@@ -1,0 +1,112 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+  
+  .row{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .online-shopping{
+    text-align: left;
+    margin-right: 50px;
+  }
+  .customer-policies{
+    text-align: left;
+    margin-right: 50px;
+  }
+  .app{
+    text-align: left;
+    margin-right: 90px;
+  }
+  .row-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  
+  }
+  .content-heading{
+    color: black;
+    font-weight: 600;
+    letter-spacing: normal;
+  }
+  .social-links{
+    display: flex;
+    justify-content: space-around;
+  }
+  .content-box{
+    line-height: 1.6;
+  }
+  .para-content{
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  .copyright-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .office-address-content{
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+  .other-info-heading{
+    font-weight: 600;
+    letter-spacing: normal;
+    color: black;
+    font-size: 15px;
+    opacity: 0.8;
+  
+  }
+  .other-info-para-content{
+    margin-top: 8px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+  .Google-play{
+    background-repeat: none;
+    margin-right: 10px;
+    background-size: fit;
+  
+  }
+  .App-Store{
+    background-repeat: none;
+  
+  }
+  .download-button{
+    display: flex;
+    margin-top: 30px;
+  }
+  .download-button img{
+    width: 130px;
+    height:40px;
+  }
+  
+  .original{
+    margin-bottom: 30px;
+    color: black;
+    opacity: 0.8;
+  
+  }
+  .customer-satisfaction{
+    margin-bottom: 30px;
+  }
+  .social-links{
+    margin-top: 12px;
+  }
+  
+  .fb-icon{
+    margin-right:6px;
+  }
+  .tw-icon{
+    margin-right:6px;
+  }
+  .yt-icon{
+    margin-right:6px;
+  }
