@@ -1,21 +1,25 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './Navbar.css'; 
 
-const Navbar = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light px-4">
-    <a className="navbar-brand" href="#">GlowSkin</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarNav">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav ms-auto">
-        <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-        <li className="nav-item"><a className="nav-link" href="#">Products</a></li>
-        <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+const Navbar = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  return (
+    <nav className="navbar" data-aos="fade-down">
+      <div className="logo">MyShop</div>
+      <ul className="nav-links">
+        <li><a href="#"><i className="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i className="fas fa-box"></i> Products</a></li>
+        <li><a href="#"><i className="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#"><i className="fas fa-envelope"></i> Contact Us</a></li>
+        <li><a href="#"><i className="fas fa-shopping-cart"></i> Cart</a></li>
       </ul>
-    </div>
-  </nav>
-);
+    </nav>
+  );
+};
 
 export default Navbar;
